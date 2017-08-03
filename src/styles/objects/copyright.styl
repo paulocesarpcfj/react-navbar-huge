@@ -1,0 +1,20 @@
+.copyright
+    display none
+    width 0
+    transition width .2s ease-in-out
+
+.mobile-menu.open > .copyright
+    display block
+    position fixed
+    bottom 0
+    z-index 3
+    font-family 'Helvetica Neue Regular'
+    padding 0 2.4rem
+    height 4.8rem
+    line-height 4.8rem
+    font-size 1.4rem
+    width calc(100vw - 12.2rem)
+    background white
+
+    @media screen and (max-width 315px)
+        line-height 2rem

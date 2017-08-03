@@ -1,0 +1,42 @@
+.banner
+    width 100vw
+
+    @media screen and (max-width 768px)
+        width 97.8vw
+
+    > .image
+        background url('/images/background-image.jpg') no-repeat center center
+        height 64rem
+        width 100%
+        background-size cover
+        margin-bottom 6rem
+        display flex
+        justify-content center
+        align-items center
+
+        @media screen and (max-width 768px)
+            height 24rem
+            margin 0
+
+    > .title
+        position absolute
+        top 30%
+        width 100%
+        text-align center
+        font-size 12rem
+        color white
+
+        @media screen and (max-width 832px)
+            font-size 10rem
+
+        @media screen and (max-width 768px)
+            width auto
+            position initial
+            color black
+            padding 5rem 2.4rem
+            font-size 5rem
+            text-align left
+
+        @media screen and (max-width 400px)
+            font-size 3.5rem
+            padding 3.5rem 2.4rem

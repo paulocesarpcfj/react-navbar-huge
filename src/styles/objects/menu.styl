@@ -1,0 +1,57 @@
+.menu
+    @media screen and (max-width 768px)
+        display none
+
+    > ul
+        display flex
+
+        // First Level
+        > li
+            position relative
+            
+            > ul
+                display none
+
+            > a
+                transition all .1s ease-in-out
+                display block
+                height 6rem
+                line-height 6rem
+                padding 0 2.4rem
+                cursor pointer
+                
+                @media screen and (max-width 860px)
+                    padding 0 1.4rem
+                
+                &:hover
+                    background white
+                    color $mainColor
+            
+                &.open
+                    background white
+                    color $mainColor
+                    
+                    // Second Level
+                    + ul
+                        font-family 'Galaxie'
+                        display block
+                        border 1px solid $secondaryColor
+                        border-top none
+                        background white
+                        position absolute
+                        left 0
+                        padding 1.2rem 0
+                        min-width 25rem
+
+                        > li
+                            > a
+                                transition all .1s ease-in-out
+                                display block
+                                padding 0 2.4rem
+                                color black
+                                height 4.8rem
+                                line-height 4.8rem
+
+                                &:hover
+                                    background $secondaryColor
+                                    color $mainColor

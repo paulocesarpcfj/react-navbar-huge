@@ -1,0 +1,25 @@
+{
+  "presets": ["es2015", "react", "stage-0"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-async-to-generator",
+    "transform-runtime"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [ "module-resolver", {
+            "root": ["."],
+            "alias": {
+                "actions": "src/actions",
+                "components": "src/components",
+                "containers": "src/containers",
+                "reducers": "src/reducers",
+                "services": "src/services",
+                "views": "src/views"
+            }
+        }]
+      ]
+    }
+  }
+}

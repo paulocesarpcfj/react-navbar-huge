@@ -1,0 +1,66 @@
+# Thumbnails
+*.db
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+# Mr Developer
+.mr.developer.cfg
+
+
+# PyCharm
+.idea/*
+/.idea
+
+# Jpipe
+hs_err*
+
+
+# Diretorio de upload de tickets do bug
+nohup.out
+
+# Logs
+*log-*.log
+*.log.*
+*.log
+*.pid
+junit*.xml
+
+# Teremos apenas um symlink vindo de etc/
+./supervisord.conf
+jobs/supervisord.conf
+cdp/supervisord.conf
+
+# Node
+.grunt
+.reports
+node_modules
+runner.html
+
+# Sass
+.sass-cache
+assets/css/style.css.map
+
+# Redis
+*.rdb
+
+# Vagrant
+.vagrant
+
+# Django Jenkins
+reports
+
+# Ios
+*.DS_Store
+prepos.cfgassets/css/style.css.map
+
+# Project
+_build
+**/**/*.map
+dist
+assets
+.nyc_output
+coverage
+.vscode/tags
+.todo

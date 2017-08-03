@@ -1,0 +1,25 @@
+[
+    {
+        "label": "Work",
+        "url": "#/work",
+        "items": []
+    },
+    {
+        "label": "About",
+        "url": "#/about",
+        "items": [
+            {
+                "label":"What we do",
+                "url":"#/about/what-we-do"
+            },
+            {
+                "label":"How we work",
+                "url":"#/about/how-we-work"
+            },
+            {
+                "label":"Leadership",
+                "url":"#/about/leadership"
+            }
+        ]
+    }
+]
