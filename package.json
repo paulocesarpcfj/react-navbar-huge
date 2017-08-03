@@ -14,7 +14,7 @@
     "lint:fix": "npm run lint -- --fix",
     "ci": "npm test --silence && npm run lint",
     "prepush": "npm run ci",
-    "heroku-postbuild": "webpack -p --config ./webpack/prod.js --progress"
+    "heroku-postbuild": "NODE_ENV=production ./node_modules/.bin/webpack -p --config ./webpack/prod.js --progress"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./tests/setup.js"
