@@ -13,7 +13,8 @@
     "lint": "./node_modules/.bin/eslint src",
     "lint:fix": "npm run lint -- --fix",
     "ci": "npm test --silence && npm run lint",
-    "prepush": "npm run ci"
+    "prepush": "npm run ci",
+    "heroku-postbuild": "webpack -p --config ./webpack/prod.js --progress"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./tests/setup.js"
