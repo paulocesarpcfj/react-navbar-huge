@@ -19,7 +19,12 @@
   "jest": {
     "setupTestFrameworkScriptFile": "./tests/setup.js"
   },
-  "devDependencies": {
+  "repository": {
+    "type": "git"
+  },
+  "author": "Paulo Ferreira",
+  "private": true,
+  "dependencies": {
     "autoprefixer": "^7.1.0",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -64,14 +69,7 @@
     "store": "^2.0.4",
     "style-loader": "^0.18.2",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
-  },
-  "repository": {
-    "type": "git"
-  },
-  "author": "Paulo Ferreira",
-  "private": true,
-  "dependencies": {
+    "stylus-loader": "^3.0.1",
     "babel-runtime": "^6.23.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
