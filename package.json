@@ -14,18 +14,12 @@
     "lint:fix": "npm run lint -- --fix",
     "ci": "npm test --silence && npm run lint",
     "prepush": "npm run ci",
-    "prestart": "npm run build",
-    "heroku-postbuild": "http-server ./dist"
+    "heroku-postbuild": "nodemon ./heroku_server.js"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./tests/setup.js"
   },
-  "repository": {
-    "type": "git"
-  },
-  "author": "Paulo Ferreira",
-  "private": true,
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^7.1.0",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -38,7 +32,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
-    "babel-runtime": "^6.23.0",
     "babel-types": "^6.24.1",
     "chai": "^4.1.0",
     "chai-enzyme": "^0.8.0",
@@ -55,7 +48,6 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.1",
     "html-webpack-plugin": "^2.28.0",
-    "http-server": "^0.10.0",
     "husky": "^0.14.3",
     "jest-cli": "^20.0.3",
     "jsdom": "^9.11.0",
@@ -63,17 +55,7 @@
     "postcss-discard-duplicates": "^2.1.0",
     "postcss-discard-unused": "^2.2.3",
     "postcss-loader": "^0.9.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-hot-loader": "^3.0.0-beta.6",
-    "react-redux": "^5.0.4",
-    "react-router": "^3.0.4",
-    "react-router-redux": "^4.0.8",
     "react-test-renderer": "^15.5.4",
-    "redux": "^3.6.0",
-    "redux-logger": "^3.0.6",
-    "redux-promise-middleware": "4.2.1",
-    "redux-thunk": "^2.2.0",
     "rimraf": "^2.6.1",
     "script-ext-html-webpack-plugin": "^1.8.0",
     "sinon": "^2.2.0",
@@ -86,5 +68,24 @@
     "webpack": "3.4.1",
     "webpack-dashboard": "0.4.0",
     "webpack-dev-server": "^2.6.1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Paulo Ferreira",
+  "private": true,
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "nodemon": "^1.11.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-redux": "^5.0.4",
+    "react-router": "^3.0.4",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "4.2.1",
+    "redux-thunk": "^2.2.0"
   }
 }
